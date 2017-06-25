@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9039DC561F0043CF0066563A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9039DC551F0043CF0066563A /* AppDelegate.swift */; };
+		9039DC581F0043CF0066563A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9039DC571F0043CF0066563A /* ViewController.swift */; };
+		9039DC5B1F0043CF0066563A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9039DC591F0043CF0066563A /* Main.storyboard */; };
+		9039DC5E1F0043CF0066563A /* LynxOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9039DC5C1F0043CF0066563A /* LynxOS.xcdatamodeld */; };
+		9039DC601F0043CF0066563A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9039DC5F1F0043CF0066563A /* Assets.xcassets */; };
+		9039DC631F0043CF0066563A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9039DC611F0043CF0066563A /* LaunchScreen.storyboard */; };
+		9039DC6E1F0043CF0066563A /* LynxOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9039DC6D1F0043CF0066563A /* LynxOSTests.swift */; };
+		9039DC791F0043D00066563A /* LynxOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9039DC781F0043D00066563A /* LynxOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9039DC6A1F0043CF0066563A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9039DC4A1F0043CF0066563A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9039DC511F0043CF0066563A;
+			remoteInfo = LynxOS;
+		};
+		9039DC751F0043CF0066563A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9039DC4A1F0043CF0066563A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9039DC511F0043CF0066563A;
+			remoteInfo = LynxOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9039DC521F0043CF0066563A /* LynxOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LynxOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9039DC551F0043CF0066563A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9039DC571F0043CF0066563A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9039DC5A1F0043CF0066563A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9039DC5D1F0043CF0066563A /* LynxOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LynxOS.xcdatamodel; sourceTree = "<group>"; };
+		9039DC5F1F0043CF0066563A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9039DC621F0043CF0066563A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9039DC641F0043CF0066563A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9039DC691F0043CF0066563A /* LynxOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LynxOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9039DC6D1F0043CF0066563A /* LynxOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LynxOSTests.swift; sourceTree = "<group>"; };
+		9039DC6F1F0043CF0066563A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9039DC741F0043CF0066563A /* LynxOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LynxOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9039DC781F0043D00066563A /* LynxOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LynxOSUITests.swift; sourceTree = "<group>"; };
+		9039DC7A1F0043D00066563A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9039DC4F1F0043CF0066563A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9039DC661F0043CF0066563A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9039DC711F0043CF0066563A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9039DC491F0043CF0066563A = {
+			isa = PBXGroup;
+			children = (
+				9039DC541F0043CF0066563A /* LynxOS */,
+				9039DC6C1F0043CF0066563A /* LynxOSTests */,
+				9039DC771F0043CF0066563A /* LynxOSUITests */,
+				9039DC531F0043CF0066563A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9039DC531F0043CF0066563A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9039DC521F0043CF0066563A /* LynxOS.app */,
+				9039DC691F0043CF0066563A /* LynxOSTests.xctest */,
+				9039DC741F0043CF0066563A /* LynxOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9039DC541F0043CF0066563A /* LynxOS */ = {
+			isa = PBXGroup;
+			children = (
+				9039DC551F0043CF0066563A /* AppDelegate.swift */,
+				9039DC571F0043CF0066563A /* ViewController.swift */,
+				9039DC591F0043CF0066563A /* Main.storyboard */,
+				9039DC5F1F0043CF0066563A /* Assets.xcassets */,
+				9039DC611F0043CF0066563A /* LaunchScreen.storyboard */,
+				9039DC641F0043CF0066563A /* Info.plist */,
+				9039DC5C1F0043CF0066563A /* LynxOS.xcdatamodeld */,
+			);
+			path = LynxOS;
+			sourceTree = "<group>";
+		};
+		9039DC6C1F0043CF0066563A /* LynxOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				9039DC6D1F0043CF0066563A /* LynxOSTests.swift */,
+				9039DC6F1F0043CF0066563A /* Info.plist */,
+			);
+			path = LynxOSTests;
+			sourceTree = "<group>";
+		};
+		9039DC771F0043CF0066563A /* LynxOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9039DC781F0043D00066563A /* LynxOSUITests.swift */,
+				9039DC7A1F0043D00066563A /* Info.plist */,
+			);
+			path = LynxOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9039DC511F0043CF0066563A /* LynxOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9039DC7D1F0043D00066563A /* Build configuration list for PBXNativeTarget "LynxOS" */;
+			buildPhases = (
+				9039DC4E1F0043CF0066563A /* Sources */,
+				9039DC4F1F0043CF0066563A /* Frameworks */,
+				9039DC501F0043CF0066563A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LynxOS;
+			productName = LynxOS;
+			productReference = 9039DC521F0043CF0066563A /* LynxOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9039DC681F0043CF0066563A /* LynxOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9039DC801F0043D00066563A /* Build configuration list for PBXNativeTarget "LynxOSTests" */;
+			buildPhases = (
+				9039DC651F0043CF0066563A /* Sources */,
+				9039DC661F0043CF0066563A /* Frameworks */,
+				9039DC671F0043CF0066563A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9039DC6B1F0043CF0066563A /* PBXTargetDependency */,
+			);
+			name = LynxOSTests;
+			productName = LynxOSTests;
+			productReference = 9039DC691F0043CF0066563A /* LynxOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9039DC731F0043CF0066563A /* LynxOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9039DC831F0043D00066563A /* Build configuration list for PBXNativeTarget "LynxOSUITests" */;
+			buildPhases = (
+				9039DC701F0043CF0066563A /* Sources */,
+				9039DC711F0043CF0066563A /* Frameworks */,
+				9039DC721F0043CF0066563A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9039DC761F0043CF0066563A /* PBXTargetDependency */,
+			);
+			name = LynxOSUITests;
+			productName = LynxOSUITests;
+			productReference = 9039DC741F0043CF0066563A /* LynxOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9039DC4A1F0043CF0066563A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Andrii Halabuda";
+				TargetAttributes = {
+					9039DC511F0043CF0066563A = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PTRW36GG78;
+						ProvisioningStyle = Automatic;
+					};
+					9039DC681F0043CF0066563A = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PTRW36GG78;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9039DC511F0043CF0066563A;
+					};
+					9039DC731F0043CF0066563A = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PTRW36GG78;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9039DC511F0043CF0066563A;
+					};
+				};
+			};
+			buildConfigurationList = 9039DC4D1F0043CF0066563A /* Build configuration list for PBXProject "LynxOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9039DC491F0043CF0066563A;
+			productRefGroup = 9039DC531F0043CF0066563A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9039DC511F0043CF0066563A /* LynxOS */,
+				9039DC681F0043CF0066563A /* LynxOSTests */,
+				9039DC731F0043CF0066563A /* LynxOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9039DC501F0043CF0066563A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9039DC631F0043CF0066563A /* LaunchScreen.storyboard in Resources */,
+				9039DC601F0043CF0066563A /* Assets.xcassets in Resources */,
+				9039DC5B1F0043CF0066563A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9039DC671F0043CF0066563A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9039DC721F0043CF0066563A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9039DC4E1F0043CF0066563A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9039DC581F0043CF0066563A /* ViewController.swift in Sources */,
+				9039DC5E1F0043CF0066563A /* LynxOS.xcdatamodeld in Sources */,
+				9039DC561F0043CF0066563A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9039DC651F0043CF0066563A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9039DC6E1F0043CF0066563A /* LynxOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9039DC701F0043CF0066563A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9039DC791F0043D00066563A /* LynxOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9039DC6B1F0043CF0066563A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9039DC511F0043CF0066563A /* LynxOS */;
+			targetProxy = 9039DC6A1F0043CF0066563A /* PBXContainerItemProxy */;
+		};
+		9039DC761F0043CF0066563A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9039DC511F0043CF0066563A /* LynxOS */;
+			targetProxy = 9039DC751F0043CF0066563A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9039DC591F0043CF0066563A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9039DC5A1F0043CF0066563A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9039DC611F0043CF0066563A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9039DC621F0043CF0066563A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9039DC7B1F0043D00066563A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9039DC7C1F0043D00066563A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9039DC7E1F0043D00066563A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PTRW36GG78;
+				INFOPLIST_FILE = LynxOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.losAngelesBoy.LynxOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9039DC7F1F0043D00066563A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PTRW36GG78;
+				INFOPLIST_FILE = LynxOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.losAngelesBoy.LynxOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		9039DC811F0043D00066563A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PTRW36GG78;
+				INFOPLIST_FILE = LynxOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.losAngelesBoy.LynxOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LynxOS.app/LynxOS";
+			};
+			name = Debug;
+		};
+		9039DC821F0043D00066563A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PTRW36GG78;
+				INFOPLIST_FILE = LynxOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.losAngelesBoy.LynxOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LynxOS.app/LynxOS";
+			};
+			name = Release;
+		};
+		9039DC841F0043D00066563A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PTRW36GG78;
+				INFOPLIST_FILE = LynxOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.losAngelesBoy.LynxOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = LynxOS;
+			};
+			name = Debug;
+		};
+		9039DC851F0043D00066563A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PTRW36GG78;
+				INFOPLIST_FILE = LynxOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.losAngelesBoy.LynxOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = LynxOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9039DC4D1F0043CF0066563A /* Build configuration list for PBXProject "LynxOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9039DC7B1F0043D00066563A /* Debug */,
+				9039DC7C1F0043D00066563A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9039DC7D1F0043D00066563A /* Build configuration list for PBXNativeTarget "LynxOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9039DC7E1F0043D00066563A /* Debug */,
+				9039DC7F1F0043D00066563A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9039DC801F0043D00066563A /* Build configuration list for PBXNativeTarget "LynxOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9039DC811F0043D00066563A /* Debug */,
+				9039DC821F0043D00066563A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9039DC831F0043D00066563A /* Build configuration list for PBXNativeTarget "LynxOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9039DC841F0043D00066563A /* Debug */,
+				9039DC851F0043D00066563A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9039DC5C1F0043CF0066563A /* LynxOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9039DC5D1F0043CF0066563A /* LynxOS.xcdatamodel */,
+			);
+			currentVersion = 9039DC5D1F0043CF0066563A /* LynxOS.xcdatamodel */;
+			path = LynxOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9039DC4A1F0043CF0066563A /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_LynxOSTests {
+  umbrella header "Pods-LynxOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

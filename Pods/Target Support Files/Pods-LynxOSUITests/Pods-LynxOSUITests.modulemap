@@ -1,0 +1,6 @@
+framework module Pods_LynxOSUITests {
+  umbrella header "Pods-LynxOSUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

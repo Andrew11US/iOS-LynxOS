@@ -1,0 +1,6 @@
+framework module Pods_LynxOS {
+  umbrella header "Pods-LynxOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

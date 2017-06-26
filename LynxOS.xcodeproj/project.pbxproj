@@ -7,14 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BC23EFECF90827698730C31 /* Pods_LynxOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3264100DE153780CDC2D25 /* Pods_LynxOSTests.framework */; };
+		2D3AF8651E9E30785F60F3DC /* Pods_LynxOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52EE1695B7BC714632AA8A4B /* Pods_LynxOS.framework */; };
 		9039DC561F0043CF0066563A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9039DC551F0043CF0066563A /* AppDelegate.swift */; };
-		9039DC581F0043CF0066563A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9039DC571F0043CF0066563A /* ViewController.swift */; };
+		9039DC581F0043CF0066563A /* LockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9039DC571F0043CF0066563A /* LockVC.swift */; };
 		9039DC5B1F0043CF0066563A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9039DC591F0043CF0066563A /* Main.storyboard */; };
 		9039DC5E1F0043CF0066563A /* LynxOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9039DC5C1F0043CF0066563A /* LynxOS.xcdatamodeld */; };
 		9039DC601F0043CF0066563A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9039DC5F1F0043CF0066563A /* Assets.xcassets */; };
 		9039DC631F0043CF0066563A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9039DC611F0043CF0066563A /* LaunchScreen.storyboard */; };
 		9039DC6E1F0043CF0066563A /* LynxOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9039DC6D1F0043CF0066563A /* LynxOSTests.swift */; };
 		9039DC791F0043D00066563A /* LynxOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9039DC781F0043D00066563A /* LynxOSUITests.swift */; };
+		9039DC8F1F0046510066563A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9039DC8E1F0046510066563A /* MainVC.swift */; };
+		9039DC911F0046770066563A /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9039DC901F0046770066563A /* SettingsVC.swift */; };
+		908198141F01178500597386 /* Baumans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 908198131F01178500597386 /* Baumans-Regular.ttf */; };
+		9081981B1F011BE400597386 /* CustomButtonAnimated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908198161F011BE400597386 /* CustomButtonAnimated.swift */; };
+		9081981C1F011BE400597386 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908198171F011BE400597386 /* CustomTextField.swift */; };
+		9081981D1F011BE400597386 /* DropMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908198181F011BE400597386 /* DropMenuButton.swift */; };
+		9081981E1F011BE400597386 /* Material Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908198191F011BE400597386 /* Material Design.swift */; };
+		9081981F1F011BE400597386 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081981A1F011BE400597386 /* RoundedImageView.swift */; };
+		908198291F0122B000597386 /* FingerprintAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908198281F0122B000597386 /* FingerprintAuthentication.swift */; };
+		BC47A6DB047ED6914067B0D3 /* Pods_LynxOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BCF4629E9FF5E98BC0703F /* Pods_LynxOSUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		366D80124A6C5E7BCEA1F628 /* Pods-LynxOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LynxOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LynxOSUITests/Pods-LynxOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		52EE1695B7BC714632AA8A4B /* Pods_LynxOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LynxOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		664BF30FFF48BA47A3D9B14F /* Pods-LynxOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LynxOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LynxOSTests/Pods-LynxOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		684A7EB4E9E185E2B80F2EEA /* Pods-LynxOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LynxOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LynxOSUITests/Pods-LynxOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6AD990413684B65DB851B2C0 /* Pods-LynxOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LynxOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-LynxOS/Pods-LynxOS.release.xcconfig"; sourceTree = "<group>"; };
 		9039DC521F0043CF0066563A /* LynxOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LynxOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9039DC551F0043CF0066563A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9039DC571F0043CF0066563A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9039DC571F0043CF0066563A /* LockVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockVC.swift; sourceTree = "<group>"; };
 		9039DC5A1F0043CF0066563A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9039DC5D1F0043CF0066563A /* LynxOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LynxOS.xcdatamodel; sourceTree = "<group>"; };
 		9039DC5F1F0043CF0066563A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +66,20 @@
 		9039DC741F0043CF0066563A /* LynxOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LynxOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9039DC781F0043D00066563A /* LynxOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LynxOSUITests.swift; sourceTree = "<group>"; };
 		9039DC7A1F0043D00066563A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9039DC8E1F0046510066563A /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		9039DC901F0046770066563A /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		908198131F01178500597386 /* Baumans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baumans-Regular.ttf"; sourceTree = "<group>"; };
+		908198161F011BE400597386 /* CustomButtonAnimated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButtonAnimated.swift; sourceTree = "<group>"; };
+		908198171F011BE400597386 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		908198181F011BE400597386 /* DropMenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropMenuButton.swift; sourceTree = "<group>"; };
+		908198191F011BE400597386 /* Material Design.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Material Design.swift"; sourceTree = "<group>"; };
+		9081981A1F011BE400597386 /* RoundedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		908198201F011CC200597386 /* LynxOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LynxOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		908198281F0122B000597386 /* FingerprintAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FingerprintAuthentication.swift; sourceTree = "<group>"; };
+		97BCF4629E9FF5E98BC0703F /* Pods_LynxOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LynxOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA3264100DE153780CDC2D25 /* Pods_LynxOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LynxOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C223338A5A7B741C17269D63 /* Pods-LynxOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LynxOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LynxOSTests/Pods-LynxOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		EADFA771847C0A4844EE2736 /* Pods-LynxOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LynxOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LynxOS/Pods-LynxOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D3AF8651E9E30785F60F3DC /* Pods_LynxOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BC23EFECF90827698730C31 /* Pods_LynxOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +103,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC47A6DB047ED6914067B0D3 /* Pods_LynxOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5AAF31296A6EB4C621DDA046 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52EE1695B7BC714632AA8A4B /* Pods_LynxOS.framework */,
+				AA3264100DE153780CDC2D25 /* Pods_LynxOSTests.framework */,
+				97BCF4629E9FF5E98BC0703F /* Pods_LynxOSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9039DC491F0043CF0066563A = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +127,8 @@
 				9039DC6C1F0043CF0066563A /* LynxOSTests */,
 				9039DC771F0043CF0066563A /* LynxOSUITests */,
 				9039DC531F0043CF0066563A /* Products */,
+				E70EE31868FED01C06DFD883 /* Pods */,
+				5AAF31296A6EB4C621DDA046 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +145,16 @@
 		9039DC541F0043CF0066563A /* LynxOS */ = {
 			isa = PBXGroup;
 			children = (
-				9039DC551F0043CF0066563A /* AppDelegate.swift */,
-				9039DC571F0043CF0066563A /* ViewController.swift */,
-				9039DC591F0043CF0066563A /* Main.storyboard */,
+				9039DC861F0044EF0066563A /* UI */,
+				908198151F011BBB00597386 /* UI Extensions */,
+				9039DC871F0044F80066563A /* Core */,
+				9039DC8C1F0045340066563A /* Data */,
+				9039DC891F00450A0066563A /* Services */,
+				9039DC8A1F0045180066563A /* Protocols */,
+				9039DC8B1F0045250066563A /* Extensions */,
+				9039DC8D1F0045E20066563A /* Fonts */,
+				9039DC881F0044FF0066563A /* Support Files */,
 				9039DC5F1F0043CF0066563A /* Assets.xcassets */,
-				9039DC611F0043CF0066563A /* LaunchScreen.storyboard */,
-				9039DC641F0043CF0066563A /* Info.plist */,
-				9039DC5C1F0043CF0066563A /* LynxOS.xcdatamodeld */,
 			);
 			path = LynxOS;
 			sourceTree = "<group>";
@@ -128,6 +177,98 @@
 			path = LynxOSUITests;
 			sourceTree = "<group>";
 		};
+		9039DC861F0044EF0066563A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9039DC591F0043CF0066563A /* Main.storyboard */,
+				9039DC611F0043CF0066563A /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		9039DC871F0044F80066563A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9039DC571F0043CF0066563A /* LockVC.swift */,
+				9039DC8E1F0046510066563A /* MainVC.swift */,
+				9039DC901F0046770066563A /* SettingsVC.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		9039DC881F0044FF0066563A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9039DC551F0043CF0066563A /* AppDelegate.swift */,
+				908198201F011CC200597386 /* LynxOS-Bridging-Header.h */,
+				9039DC641F0043CF0066563A /* Info.plist */,
+				9039DC5C1F0043CF0066563A /* LynxOS.xcdatamodeld */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		9039DC891F00450A0066563A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				908198281F0122B000597386 /* FingerprintAuthentication.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		9039DC8A1F0045180066563A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		9039DC8B1F0045250066563A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		9039DC8C1F0045340066563A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		9039DC8D1F0045E20066563A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				908198131F01178500597386 /* Baumans-Regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		908198151F011BBB00597386 /* UI Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				908198161F011BE400597386 /* CustomButtonAnimated.swift */,
+				908198171F011BE400597386 /* CustomTextField.swift */,
+				908198181F011BE400597386 /* DropMenuButton.swift */,
+				9081981A1F011BE400597386 /* RoundedImageView.swift */,
+				908198191F011BE400597386 /* Material Design.swift */,
+			);
+			name = "UI Extensions";
+			sourceTree = "<group>";
+		};
+		E70EE31868FED01C06DFD883 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EADFA771847C0A4844EE2736 /* Pods-LynxOS.debug.xcconfig */,
+				6AD990413684B65DB851B2C0 /* Pods-LynxOS.release.xcconfig */,
+				664BF30FFF48BA47A3D9B14F /* Pods-LynxOSTests.debug.xcconfig */,
+				C223338A5A7B741C17269D63 /* Pods-LynxOSTests.release.xcconfig */,
+				366D80124A6C5E7BCEA1F628 /* Pods-LynxOSUITests.debug.xcconfig */,
+				684A7EB4E9E185E2B80F2EEA /* Pods-LynxOSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +276,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9039DC7D1F0043D00066563A /* Build configuration list for PBXNativeTarget "LynxOS" */;
 			buildPhases = (
+				C48B1313DC431FCBA4F736FC /* [CP] Check Pods Manifest.lock */,
 				9039DC4E1F0043CF0066563A /* Sources */,
 				9039DC4F1F0043CF0066563A /* Frameworks */,
 				9039DC501F0043CF0066563A /* Resources */,
+				C8301CF4798A5CBCE88132E4 /* [CP] Embed Pods Frameworks */,
+				CB2D566762BB9BEB199817D8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +296,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9039DC801F0043D00066563A /* Build configuration list for PBXNativeTarget "LynxOSTests" */;
 			buildPhases = (
+				F028143CB096762CFA807EED /* [CP] Check Pods Manifest.lock */,
 				9039DC651F0043CF0066563A /* Sources */,
 				9039DC661F0043CF0066563A /* Frameworks */,
 				9039DC671F0043CF0066563A /* Resources */,
+				676775390DEE4C2BA4BDF1E4 /* [CP] Embed Pods Frameworks */,
+				6985EF32585083CA91720F47 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +317,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9039DC831F0043D00066563A /* Build configuration list for PBXNativeTarget "LynxOSUITests" */;
 			buildPhases = (
+				2B5FF2B3B97873C8616CEBBD /* [CP] Check Pods Manifest.lock */,
 				9039DC701F0043CF0066563A /* Sources */,
 				9039DC711F0043CF0066563A /* Frameworks */,
 				9039DC721F0043CF0066563A /* Resources */,
+				24E02788B464CF6EBEADD662 /* [CP] Embed Pods Frameworks */,
+				53E215782EB1CACE43D6DAC4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,6 +347,7 @@
 					9039DC511F0043CF0066563A = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = PTRW36GG78;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					9039DC681F0043CF0066563A = {
@@ -239,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9039DC631F0043CF0066563A /* LaunchScreen.storyboard in Resources */,
+				908198141F01178500597386 /* Baumans-Regular.ttf in Resources */,
 				9039DC601F0043CF0066563A /* Assets.xcassets in Resources */,
 				9039DC5B1F0043CF0066563A /* Main.storyboard in Resources */,
 			);
@@ -260,14 +412,160 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24E02788B464CF6EBEADD662 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LynxOSUITests/Pods-LynxOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B5FF2B3B97873C8616CEBBD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		53E215782EB1CACE43D6DAC4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LynxOSUITests/Pods-LynxOSUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		676775390DEE4C2BA4BDF1E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LynxOSTests/Pods-LynxOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6985EF32585083CA91720F47 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LynxOSTests/Pods-LynxOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C48B1313DC431FCBA4F736FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C8301CF4798A5CBCE88132E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LynxOS/Pods-LynxOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB2D566762BB9BEB199817D8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LynxOS/Pods-LynxOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F028143CB096762CFA807EED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9039DC4E1F0043CF0066563A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9039DC581F0043CF0066563A /* ViewController.swift in Sources */,
+				9081981C1F011BE400597386 /* CustomTextField.swift in Sources */,
+				908198291F0122B000597386 /* FingerprintAuthentication.swift in Sources */,
+				9039DC581F0043CF0066563A /* LockVC.swift in Sources */,
+				9039DC8F1F0046510066563A /* MainVC.swift in Sources */,
+				9081981E1F011BE400597386 /* Material Design.swift in Sources */,
 				9039DC5E1F0043CF0066563A /* LynxOS.xcdatamodeld in Sources */,
+				9081981B1F011BE400597386 /* CustomButtonAnimated.swift in Sources */,
+				9081981F1F011BE400597386 /* RoundedImageView.swift in Sources */,
+				9081981D1F011BE400597386 /* DropMenuButton.swift in Sources */,
 				9039DC561F0043CF0066563A /* AppDelegate.swift in Sources */,
+				9039DC911F0046770066563A /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,32 +717,40 @@
 		};
 		9039DC7E1F0043D00066563A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EADFA771847C0A4844EE2736 /* Pods-LynxOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = PTRW36GG78;
 				INFOPLIST_FILE = LynxOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.losAngelesBoy.LynxOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LynxOS/LynxOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		9039DC7F1F0043D00066563A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AD990413684B65DB851B2C0 /* Pods-LynxOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = PTRW36GG78;
 				INFOPLIST_FILE = LynxOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.losAngelesBoy.LynxOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LynxOS/LynxOS-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		9039DC811F0043D00066563A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 664BF30FFF48BA47A3D9B14F /* Pods-LynxOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -460,6 +766,7 @@
 		};
 		9039DC821F0043D00066563A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C223338A5A7B741C17269D63 /* Pods-LynxOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -475,6 +782,7 @@
 		};
 		9039DC841F0043D00066563A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 366D80124A6C5E7BCEA1F628 /* Pods-LynxOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = PTRW36GG78;
@@ -489,6 +797,7 @@
 		};
 		9039DC851F0043D00066563A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 684A7EB4E9E185E2B80F2EEA /* Pods-LynxOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = PTRW36GG78;
@@ -520,6 +829,7 @@
 				9039DC7F1F0043D00066563A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9039DC801F0043D00066563A /* Build configuration list for PBXNativeTarget "LynxOSTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +838,7 @@
 				9039DC821F0043D00066563A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9039DC831F0043D00066563A /* Build configuration list for PBXNativeTarget "LynxOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +847,7 @@
 				9039DC851F0043D00066563A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

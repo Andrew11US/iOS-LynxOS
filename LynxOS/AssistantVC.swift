@@ -19,11 +19,4 @@ class AssistantVC: UIViewController {
     @IBAction func backTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
-    @IBAction func settingsTapped(_ sender: Any) {
-    }
-
-    @IBAction func homeTapped(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
 }

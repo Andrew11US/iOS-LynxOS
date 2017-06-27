@@ -53,14 +53,6 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func goToAssistant(_ sender: Any) {
-        performSegue(withIdentifier: Identifiers.assistant.rawValue, sender: nil)
-    }
-    
-    @IBAction func goToSettings(_ sender: Any) {
-        performSegue(withIdentifier: Identifiers.settings.rawValue, sender: nil)
-    }
-    
     func addApps() {
         apps.append(App(appName: "Camera", appIconImage: "camera", destination: Identifiers.camera.rawValue))
         apps.append(App(appName: "Weather", appIconImage: "weather", destination: Identifiers.notAvailable.rawValue))

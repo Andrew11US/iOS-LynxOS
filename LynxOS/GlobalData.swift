@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 
 enum Identifiers: String {
-    case settings = "openToSettings"
+    case settings = "openSettings"
     case assistant = "openAssistant"
     case camera = "openCamera"
     case main = "openMain"

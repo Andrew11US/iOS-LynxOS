@@ -11,9 +11,19 @@ import LocalAuthentication
 
 class LockVC: UIViewController {
 
+    @IBOutlet weak var timeLbl: UILabel!
+    @IBOutlet weak var dateLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        timeLbl.text = getTime()
+        dateLbl.text = getDate()
+        
+        _ = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { (timer) in
+            self.timeLbl.text = Date().getTime()
+            self.dateLbl.text = Date().getDate()
+        }
     }
     
     @IBAction func unlockTapped(_ sender: Any) {
@@ -135,5 +145,22 @@ class LockVC: UIViewController {
         }
     }
     
+    func getTime() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeStyle = .short
+        let currentTime = dateFormatter.string(from: Date())
+        
+        return currentTime
+    }
+    
+    func getDate() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .full
+        dateFormatter.timeStyle = .none
+        let currentDate = dateFormatter.string(from: Date())
+        
+        return currentDate
+    }
+
 }
 

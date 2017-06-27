@@ -26,6 +26,9 @@
 		9081981E1F011BE400597386 /* Material Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908198191F011BE400597386 /* Material Design.swift */; };
 		9081981F1F011BE400597386 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081981A1F011BE400597386 /* RoundedImageView.swift */; };
 		908198291F0122B000597386 /* FingerprintAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908198281F0122B000597386 /* FingerprintAuthentication.swift */; };
+		90B7D1781F024A9A006E442E /* AppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B7D1771F024A9A006E442E /* AppCell.swift */; };
+		90B7D17A1F024F82006E442E /* AssistantVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B7D1791F024F82006E442E /* AssistantVC.swift */; };
+		90B7D17C1F0257F0006E442E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B7D17B1F0257F0006E442E /* Extensions.swift */; };
 		BC47A6DB047ED6914067B0D3 /* Pods_LynxOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BCF4629E9FF5E98BC0703F /* Pods_LynxOSUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +79,9 @@
 		9081981A1F011BE400597386 /* RoundedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
 		908198201F011CC200597386 /* LynxOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LynxOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		908198281F0122B000597386 /* FingerprintAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FingerprintAuthentication.swift; sourceTree = "<group>"; };
+		90B7D1771F024A9A006E442E /* AppCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCell.swift; sourceTree = "<group>"; };
+		90B7D1791F024F82006E442E /* AssistantVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssistantVC.swift; sourceTree = "<group>"; };
+		90B7D17B1F0257F0006E442E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		97BCF4629E9FF5E98BC0703F /* Pods_LynxOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LynxOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA3264100DE153780CDC2D25 /* Pods_LynxOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LynxOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C223338A5A7B741C17269D63 /* Pods-LynxOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LynxOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LynxOSTests/Pods-LynxOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -192,6 +198,7 @@
 				9039DC571F0043CF0066563A /* LockVC.swift */,
 				9039DC8E1F0046510066563A /* MainVC.swift */,
 				9039DC901F0046770066563A /* SettingsVC.swift */,
+				90B7D1791F024F82006E442E /* AssistantVC.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -225,6 +232,7 @@
 		9039DC8B1F0045250066563A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				90B7D17B1F0257F0006E442E /* Extensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -252,6 +260,7 @@
 				908198181F011BE400597386 /* DropMenuButton.swift */,
 				9081981A1F011BE400597386 /* RoundedImageView.swift */,
 				908198191F011BE400597386 /* Material Design.swift */,
+				90B7D1771F024A9A006E442E /* AppCell.swift */,
 			);
 			name = "UI Extensions";
 			sourceTree = "<group>";
@@ -557,6 +566,7 @@
 			files = (
 				9081981C1F011BE400597386 /* CustomTextField.swift in Sources */,
 				908198291F0122B000597386 /* FingerprintAuthentication.swift in Sources */,
+				90B7D17A1F024F82006E442E /* AssistantVC.swift in Sources */,
 				9039DC581F0043CF0066563A /* LockVC.swift in Sources */,
 				9039DC8F1F0046510066563A /* MainVC.swift in Sources */,
 				9081981E1F011BE400597386 /* Material Design.swift in Sources */,
@@ -564,8 +574,10 @@
 				9081981B1F011BE400597386 /* CustomButtonAnimated.swift in Sources */,
 				9081981F1F011BE400597386 /* RoundedImageView.swift in Sources */,
 				9081981D1F011BE400597386 /* DropMenuButton.swift in Sources */,
+				90B7D1781F024A9A006E442E /* AppCell.swift in Sources */,
 				9039DC561F0043CF0066563A /* AppDelegate.swift in Sources */,
 				9039DC911F0046770066563A /* SettingsVC.swift in Sources */,
+				90B7D17C1F0257F0006E442E /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

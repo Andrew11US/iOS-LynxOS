@@ -1,24 +1,29 @@
 //
-//  SettingsVC.swift
+//  AssistantVC.swift
 //  LynxOS
 //
-//  Created by Andrew Foster on 6/25/17.
+//  Created by Andrew Foster on 6/27/17.
 //  Copyright © 2017 Andrii Halabuda. All rights reserved.
 //
 
 import UIKit
 
-class SettingsVC: UIViewController {
+class AssistantVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
+    
     @IBAction func backTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func settingsTapped(_ sender: Any) {
+    }
 
-
+    @IBAction func homeTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }

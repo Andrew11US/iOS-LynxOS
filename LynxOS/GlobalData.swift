@@ -14,6 +14,7 @@ enum Identifiers: String {
     case assistant = "openAssistant"
     case camera = "openCamera"
     case main = "openMain"
+    case notAvailable = "openNA"
     case appCell = "appCell"
     case settingsCell = "settingsCell"
 }

@@ -62,7 +62,15 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func addApps() {
-        apps.append(App(appName: "Camera", appIconImage: "camera", destination: "openCamera"))
-        apps.append(App(appName: "Weather", appIconImage: "weather", destination: "openWeather"))
+        apps.append(App(appName: "Camera", appIconImage: "camera", destination: Identifiers.camera.rawValue))
+        apps.append(App(appName: "Weather", appIconImage: "weather", destination: Identifiers.notAvailable.rawValue))
+        apps.append(App(appName: "Browser", appIconImage: "browser", destination: Identifiers.notAvailable.rawValue))
+        apps.append(App(appName: "Music", appIconImage: "music", destination: Identifiers.notAvailable.rawValue))
+        apps.append(App(appName: "Calculator", appIconImage: "calculator", destination: Identifiers.notAvailable.rawValue))
+        apps.append(App(appName: "Clock", appIconImage: "clock", destination: Identifiers.notAvailable.rawValue))
+        apps.append(App(appName: "Brush", appIconImage: "brush", destination: Identifiers.notAvailable.rawValue))
+        apps.append(App(appName: "SocialNet", appIconImage: "socialnet", destination: Identifiers.notAvailable.rawValue))
+        apps.append(App(appName: "Random", appIconImage: "random", destination: Identifiers.notAvailable.rawValue))
+        apps.append(App(appName: "LAplaces", appIconImage: "laplaces", destination: Identifiers.notAvailable.rawValue))
     }
 }

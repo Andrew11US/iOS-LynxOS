@@ -34,6 +34,7 @@
 		90B7D1851F028825006E442E /* PhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B7D1821F028825006E442E /* PhotoCaptureDelegate.swift */; };
 		90B7D1861F028825006E442E /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B7D1831F028825006E442E /* PreviewView.swift */; };
 		90B7D1881F028D66006E442E /* AppClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B7D1871F028D66006E442E /* AppClass.swift */; };
+		90B7D18A1F02BA82006E442E /* NotAvailableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B7D1891F02BA82006E442E /* NotAvailableVC.swift */; };
 		BC47A6DB047ED6914067B0D3 /* Pods_LynxOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BCF4629E9FF5E98BC0703F /* Pods_LynxOSUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +93,7 @@
 		90B7D1821F028825006E442E /* PhotoCaptureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureDelegate.swift; sourceTree = "<group>"; };
 		90B7D1831F028825006E442E /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		90B7D1871F028D66006E442E /* AppClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppClass.swift; sourceTree = "<group>"; };
+		90B7D1891F02BA82006E442E /* NotAvailableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotAvailableVC.swift; sourceTree = "<group>"; };
 		97BCF4629E9FF5E98BC0703F /* Pods_LynxOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LynxOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA3264100DE153780CDC2D25 /* Pods_LynxOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LynxOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C223338A5A7B741C17269D63 /* Pods-LynxOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LynxOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LynxOSTests/Pods-LynxOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				9039DC901F0046770066563A /* SettingsVC.swift */,
 				90B7D1791F024F82006E442E /* AssistantVC.swift */,
 				90B7D1811F028825006E442E /* CameraVC.swift */,
+				90B7D1891F02BA82006E442E /* NotAvailableVC.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -582,6 +585,7 @@
 				9081981C1F011BE400597386 /* CustomTextField.swift in Sources */,
 				908198291F0122B000597386 /* FingerprintAuthentication.swift in Sources */,
 				90B7D17A1F024F82006E442E /* AssistantVC.swift in Sources */,
+				90B7D18A1F02BA82006E442E /* NotAvailableVC.swift in Sources */,
 				90B7D1841F028825006E442E /* CameraVC.swift in Sources */,
 				9039DC581F0043CF0066563A /* LockVC.swift in Sources */,
 				9039DC8F1F0046510066563A /* MainVC.swift in Sources */,

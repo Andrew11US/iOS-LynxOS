@@ -10,12 +10,19 @@ import UIKit
 
 class AppCell: UITableViewCell {
 
-    @IBOutlet weak var appName: UILabel!
-    @IBOutlet weak var appIcon: UIImageView!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var iconImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    func updateUI(app: App) {
+        
+        name.text = app.appName
+        iconImage.image = UIImage(named: app.appIconImage.lowercased())
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -12,11 +12,15 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var apps = [App]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tableView.delegate = self
         tableView.dataSource = self
+        
+        addApps()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -24,15 +28,21 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return apps.count
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "openCamera", sender: nil)
+        let appDestination = apps[indexPath.row].destination
+        performSegue(withIdentifier: appDestination, sender: nil)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "appCell", for: indexPath) as? AppCell {
+        
+        if let cell = tableView.dequeueReusableCell(withIdentifier: Identifiers.appCell.rawValue, for: indexPath) as? AppCell {
+            
+            let app = apps[indexPath.row]
+            cell.updateUI(app: app)
+            
             return cell
         }
         return AppCell()
@@ -44,7 +54,15 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     @IBAction func goToAssistant(_ sender: Any) {
-        performSegue(withIdentifier: "goToAssistant", sender: nil)
+        performSegue(withIdentifier: Identifiers.assistant.rawValue, sender: nil)
     }
-
+    
+    @IBAction func goToSettings(_ sender: Any) {
+        performSegue(withIdentifier: Identifiers.settings.rawValue, sender: nil)
+    }
+    
+    func addApps() {
+        apps.append(App(appName: "Camera", appIconImage: "camera", destination: "openCamera"))
+        apps.append(App(appName: "Weather", appIconImage: "weather", destination: "openWeather"))
+    }
 }

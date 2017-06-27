@@ -141,7 +141,7 @@ class LockVC: UIViewController {
         
         DispatchQueue.main.async { () -> Void in
             
-            self.performSegue(withIdentifier: "MainVC", sender: nil)
+            self.performSegue(withIdentifier: Identifiers.main.rawValue, sender: nil)
         }
     }
     

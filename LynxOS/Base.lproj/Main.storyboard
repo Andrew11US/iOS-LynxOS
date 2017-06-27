@@ -102,7 +102,7 @@
                     <connections>
                         <outlet property="dateLbl" destination="zoS-5w-sO9" id="TpR-BH-dTh"/>
                         <outlet property="timeLbl" destination="cd5-BF-bQe" id="kz4-Kv-gQd"/>
-                        <segue destination="AND-vF-q44" kind="presentation" identifier="MainVC" modalTransitionStyle="crossDissolve" id="2JG-Oj-GPx"/>
+                        <segue destination="AND-vF-q44" kind="presentation" identifier="openMain" modalTransitionStyle="crossDissolve" id="2JG-Oj-GPx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -158,7 +158,7 @@
                                         </constraints>
                                         <state key="normal" image="Multitasking"/>
                                         <connections>
-                                            <segue destination="Ob2-MJ-Bgi" kind="presentation" modalTransitionStyle="crossDissolve" id="m2V-4N-lNi"/>
+                                            <segue destination="Ob2-MJ-Bgi" kind="presentation" identifier="openSettings" modalTransitionStyle="crossDissolve" id="m2V-4N-lNi"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -216,8 +216,8 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <outlet property="appIcon" destination="LsH-bB-4Mm" id="heg-ju-1g8"/>
-                                            <outlet property="appName" destination="MT1-zc-gwg" id="5tZ-y5-Crn"/>
+                                            <outlet property="iconImage" destination="LsH-bB-4Mm" id="5QX-mC-ER1"/>
+                                            <outlet property="name" destination="MT1-zc-gwg" id="U3P-Kz-hU8"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -239,7 +239,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="Uh4-qH-3mj" id="i6I-pT-txz"/>
-                        <segue destination="RL4-a7-qn0" kind="presentation" identifier="goToAssistant" modalTransitionStyle="crossDissolve" id="4hl-VX-cRb"/>
+                        <segue destination="RL4-a7-qn0" kind="presentation" identifier="openAssistant" modalTransitionStyle="crossDissolve" id="4hl-VX-cRb"/>
                         <segue destination="aiK-LG-9X1" kind="presentation" identifier="openCamera" modalTransitionStyle="crossDissolve" id="4mp-Ll-Fae"/>
                     </connections>
                 </viewController>
@@ -264,12 +264,135 @@
                     <view key="view" contentMode="scaleToFill" id="tFh-TZ-WyL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CUI-Gz-POs" customClass="PreviewView" customModule="LynxOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="GlD-EK-KUS" appends="YES" id="ecu-ec-QYj"/>
+                                </connections>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="JFl-FY-6nF">
+                                <rect key="frame" x="78.666666666666686" y="594" width="257" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRp-Dg-ZPr">
+                                        <rect key="frame" x="0.0" y="0.0" width="69.999999999999986" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="B8j-ha-l9l"/>
+                                            <constraint firstAttribute="width" constant="70" id="WZV-ez-EFk"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="Home"/>
+                                        <connections>
+                                            <action selector="changeCamera:" destination="aiK-LG-9X1" eventType="touchUpInside" id="Lmo-Hi-akw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPv-Yd-g0n">
+                                        <rect key="frame" x="69.999999999999986" y="0.0" width="70.000000000000014" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="X7F-51-LEa"/>
+                                            <constraint firstAttribute="width" constant="70" id="sO7-bL-msb"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="Home"/>
+                                        <connections>
+                                            <action selector="capturePhoto:" destination="aiK-LG-9X1" eventType="touchUpInside" id="MO2-7K-4wh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnR-CP-cMz">
+                                        <rect key="frame" x="140" y="0.0" width="70.000000000000028" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="ZCl-uF-HTx"/>
+                                            <constraint firstAttribute="width" constant="70" id="iyj-WJ-2QV"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="Home"/>
+                                        <connections>
+                                            <action selector="toggleMovieRecording:" destination="aiK-LG-9X1" eventType="touchUpInside" id="qYC-uw-hDH"/>
+                                        </connections>
+                                    </button>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="s4l-Lv-Wwn">
+                                        <rect key="frame" x="210" y="0.0" width="47" height="71"/>
+                                        <segments>
+                                            <segment title="P"/>
+                                            <segment title="V"/>
+                                        </segments>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="toggleCaptureMode:" destination="aiK-LG-9X1" eventType="valueChanged" id="Hvd-CH-Xgf"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="tl1-bJ-Ekt">
+                                <rect key="frame" x="101" y="684" width="212" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kb-iM-ll4" customClass="CustomButton" customModule="LynxOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="47R-1B-5B7"/>
+                                            <constraint firstAttribute="width" constant="44" id="Kcg-pM-fie"/>
+                                        </constraints>
+                                        <state key="normal" image="Back"/>
+                                        <connections>
+                                            <action selector="backTapped:" destination="aiK-LG-9X1" eventType="touchUpInside" id="EIl-Hs-Omh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G54-iZ-ECh" customClass="CustomButton" customModule="LynxOS" customModuleProvider="target">
+                                        <rect key="frame" x="84" y="0.0" width="44" height="44"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="Qty-f2-DxW"/>
+                                            <constraint firstAttribute="height" constant="44" id="W44-Vf-2FW"/>
+                                        </constraints>
+                                        <state key="normal" image="HomeActive"/>
+                                        <connections>
+                                            <segue destination="AND-vF-q44" kind="presentation" modalTransitionStyle="crossDissolve" id="DDw-Op-fv1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTj-GC-ALN" customClass="CustomButton" customModule="LynxOS" customModuleProvider="target">
+                                        <rect key="frame" x="168" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="TZ2-PV-23l"/>
+                                            <constraint firstAttribute="height" constant="44" id="uNQ-gq-vtj"/>
+                                        </constraints>
+                                        <state key="normal" image="Multitasking"/>
+                                        <connections>
+                                            <segue destination="Ob2-MJ-Bgi" kind="presentation" modalTransitionStyle="crossDissolve" id="uSG-dS-qPm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="XZe-Ax-jEu"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dcx-h7-mgZ" firstAttribute="top" secondItem="CUI-Gz-POs" secondAttribute="bottom" id="E0M-mZ-n8g"/>
+                            <constraint firstItem="CUI-Gz-POs" firstAttribute="leading" secondItem="tFh-TZ-WyL" secondAttribute="leading" id="TxI-NY-dsn"/>
+                            <constraint firstItem="tl1-bJ-Ekt" firstAttribute="top" secondItem="JFl-FY-6nF" secondAttribute="bottom" constant="20" id="ZaN-UE-LrW"/>
+                            <constraint firstAttribute="trailing" secondItem="CUI-Gz-POs" secondAttribute="trailing" id="aC2-wd-j9T"/>
+                            <constraint firstItem="JFl-FY-6nF" firstAttribute="centerX" secondItem="tFh-TZ-WyL" secondAttribute="centerX" id="aaj-pU-9RR"/>
+                            <constraint firstItem="Dcx-h7-mgZ" firstAttribute="top" secondItem="tl1-bJ-Ekt" secondAttribute="bottom" constant="8" id="eTn-Fs-C9L"/>
+                            <constraint firstItem="CUI-Gz-POs" firstAttribute="top" secondItem="tFh-TZ-WyL" secondAttribute="top" id="hdQ-4q-wAC"/>
+                            <constraint firstItem="tl1-bJ-Ekt" firstAttribute="centerX" secondItem="tFh-TZ-WyL" secondAttribute="centerX" id="pjx-mj-ITV"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cameraButton" destination="hRp-Dg-ZPr" id="CvE-M8-9in"/>
+                        <outlet property="captureModeControl" destination="s4l-Lv-Wwn" id="YSi-B4-d0X"/>
+                        <outlet property="photoButton" destination="lPv-Yd-g0n" id="Uhx-sE-Wuj"/>
+                        <outlet property="previewView" destination="CUI-Gz-POs" id="5OO-r6-xQk"/>
+                        <outlet property="recordButton" destination="OnR-CP-cMz" id="rUR-2U-dxZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jIo-xd-OoE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="GlD-EK-KUS">
+                    <connections>
+                        <action selector="focusAndExposeTap:" destination="aiK-LG-9X1" id="7hl-Nw-3I8"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1931" y="138"/>
+            <point key="canvasLocation" x="1930.4347826086957" y="136.95652173913044"/>
         </scene>
         <!--SettingsVC-->
         <scene sceneID="WNg-Pi-WyN">
@@ -469,7 +592,7 @@
         <image name="weather" width="300" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="J4b-as-14I"/>
+        <segue reference="DDw-Op-fv1"/>
         <segue reference="m2V-4N-lNi"/>
     </inferredMetricsTieBreakers>
 </document>

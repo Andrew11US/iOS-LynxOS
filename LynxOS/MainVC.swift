@@ -27,6 +27,10 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return 10
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "openCamera", sender: nil)
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "appCell", for: indexPath) as? AppCell {
             return cell

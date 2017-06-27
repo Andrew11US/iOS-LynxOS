@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -24,18 +24,18 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wall" translatesAutoresizingMaskIntoConstraints="NO" id="8hN-j9-vxR">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <view clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wdH-ki-peF">
-                                <rect key="frame" x="-0.5" y="-0.5" width="320" height="568"/>
+                                <rect key="frame" x="-0.66666666666665719" y="-0.66666666666668561" width="414.33333333333337" height="736.33333333333326"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:34" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cd5-BF-bQe">
-                                <rect key="frame" x="36" y="90" width="248" height="70"/>
+                                <rect key="frame" x="40" y="90" width="334" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="9Da-dx-dUS"/>
                                 </constraints>
@@ -44,7 +44,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday, June 25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoS-5w-sO9">
-                                <rect key="frame" x="36" y="160" width="248" height="30"/>
+                                <rect key="frame" x="40" y="160" width="334" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="CBD-Bh-aB2"/>
                                 </constraints>
@@ -53,7 +53,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2EB-Rj-97b" customClass="CustomButton" customModule="LynxOS" customModuleProvider="target">
-                                <rect key="frame" x="138" y="516" width="44" height="44"/>
+                                <rect key="frame" x="185" y="684" width="44" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="44" id="0z5-gx-SNZ"/>
                                     <constraint firstAttribute="height" constant="44" id="H8S-wu-7BC"/>
@@ -64,7 +64,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlock with Fingerprint" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFR-Na-hLb">
-                                <rect key="frame" x="36" y="491" width="248" height="25"/>
+                                <rect key="frame" x="40" y="659" width="334" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="TFM-0e-FDm"/>
                                 </constraints>
@@ -118,14 +118,14 @@
                         <viewControllerLayoutGuide type="bottom" id="vEB-Zd-fHE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="c6t-Fk-giJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wall" translatesAutoresizingMaskIntoConstraints="NO" id="k7t-ZX-6CH">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="w4l-n0-QiD">
-                                <rect key="frame" x="54" y="516" width="212" height="44"/>
+                                <rect key="frame" x="101" y="684" width="212" height="44"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4p-4O-f1S" customClass="CustomButton" customModule="LynxOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
@@ -167,21 +167,21 @@
                                 </constraints>
                             </stackView>
                             <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uh4-qH-3mj">
-                                <rect key="frame" x="16" y="28" width="288" height="480"/>
+                                <rect key="frame" x="20" y="28" width="374" height="648"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="appCell" rowHeight="120" id="pup-x1-0V2" customClass="AppCell" customModule="LynxOS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="288" height="120"/>
+                                        <rect key="frame" x="0.0" y="28" width="374" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pup-x1-0V2" id="AWD-TA-nZG">
-                                            <rect key="frame" x="0.0" y="0.0" width="288" height="120"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tnz-ke-8O0">
-                                                    <rect key="frame" x="8" y="11" width="272" height="97.5"/>
+                                                    <rect key="frame" x="8" y="8" width="358" height="104"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wall" translatesAutoresizingMaskIntoConstraints="NO" id="LsH-bB-4Mm" customClass="RoundedImageView" customModule="LynxOS" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="0.0" width="272" height="98"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weather" translatesAutoresizingMaskIntoConstraints="NO" id="LsH-bB-4Mm" customClass="RoundedImageView" customModule="LynxOS" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="358" height="104"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                     <real key="value" value="15"/>
@@ -189,7 +189,7 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MT1-zc-gwg">
-                                                            <rect key="frame" x="184.5" y="8" width="79.5" height="21"/>
+                                                            <rect key="frame" x="270" y="8" width="79.666666666666686" height="21"/>
                                                             <fontDescription key="fontDescription" name="Baumans-Regular" family="Baumans" pointSize="18"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -208,8 +208,8 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstItem="tnz-ke-8O0" firstAttribute="top" secondItem="AWD-TA-nZG" secondAttribute="topMargin" constant="3" id="HD5-kw-FyQ"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="tnz-ke-8O0" secondAttribute="bottom" constant="3" id="PSi-Ai-G8t"/>
+                                                <constraint firstItem="tnz-ke-8O0" firstAttribute="top" secondItem="AWD-TA-nZG" secondAttribute="topMargin" id="HD5-kw-FyQ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="tnz-ke-8O0" secondAttribute="bottom" id="PSi-Ai-G8t"/>
                                                 <constraint firstItem="tnz-ke-8O0" firstAttribute="trailing" secondItem="AWD-TA-nZG" secondAttribute="trailingMargin" id="icm-0c-mK2"/>
                                                 <constraint firstItem="tnz-ke-8O0" firstAttribute="leading" secondItem="AWD-TA-nZG" secondAttribute="leadingMargin" id="kcH-BC-PVV"/>
                                             </constraints>
@@ -240,6 +240,7 @@
                     <connections>
                         <outlet property="tableView" destination="Uh4-qH-3mj" id="i6I-pT-txz"/>
                         <segue destination="RL4-a7-qn0" kind="presentation" identifier="goToAssistant" modalTransitionStyle="crossDissolve" id="4hl-VX-cRb"/>
+                        <segue destination="aiK-LG-9X1" kind="presentation" identifier="openCamera" modalTransitionStyle="crossDissolve" id="4mp-Ll-Fae"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jvk-vc-35t" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -252,6 +253,24 @@
             </objects>
             <point key="canvasLocation" x="976.875" y="136.26760563380282"/>
         </scene>
+        <!--CameraVC-->
+        <scene sceneID="iKn-u6-uGd">
+            <objects>
+                <viewController id="aiK-LG-9X1" customClass="CameraVC" customModule="LynxOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DvW-bF-soI"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dcx-h7-mgZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tFh-TZ-WyL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jIo-xd-OoE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1931" y="138"/>
+        </scene>
         <!--SettingsVC-->
         <scene sceneID="WNg-Pi-WyN">
             <objects>
@@ -261,14 +280,14 @@
                         <viewControllerLayoutGuide type="bottom" id="hgA-oU-bwu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hhd-Zc-jKc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wall" translatesAutoresizingMaskIntoConstraints="NO" id="sAO-Sc-nd7">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="4HE-ZC-e4v">
-                                <rect key="frame" x="54" y="516" width="212" height="44"/>
+                                <rect key="frame" x="101" y="684" width="212" height="44"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZX-0f-dcF" customClass="CustomButton" customModule="LynxOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
@@ -306,12 +325,12 @@
                                 </constraints>
                             </stackView>
                             <view clipsSubviews="YES" alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mFV-AE-6js">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="508"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="676"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVb-Jv-mG0">
-                                        <rect key="frame" x="20" y="20" width="280" height="40"/>
+                                        <rect key="frame" x="20" y="20" width="374" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="PEC-1t-hIw"/>
+                                            <constraint firstAttribute="height" constant="30" id="PEC-1t-hIw"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Baumans-Regular" family="Baumans" pointSize="24"/>
                                         <color key="textColor" red="0.032116401940584183" green="0.14629828929901123" blue="0.26669764518737793" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -354,17 +373,17 @@
                         <viewControllerLayoutGuide type="bottom" id="ITy-jZ-G3t"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PLu-CL-NL7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wall" translatesAutoresizingMaskIntoConstraints="NO" id="hx2-K0-B9D">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hub-AJ-M7Q">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="508"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="676"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assistant is not available right now" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mX4-2u-VoK">
-                                        <rect key="frame" x="20" y="120" width="280" height="59.5"/>
+                                        <rect key="frame" x="20" y="120.00000000000001" width="374" height="59.333333333333357"/>
                                         <fontDescription key="fontDescription" name="Baumans-Regular" family="Baumans" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -379,7 +398,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="tkU-1f-OnY">
-                                <rect key="frame" x="54" y="516" width="212" height="44"/>
+                                <rect key="frame" x="101" y="684" width="212" height="44"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4t-2u-QJt" customClass="CustomButton" customModule="LynxOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
@@ -447,9 +466,10 @@
         <image name="Multitasking" width="34" height="34"/>
         <image name="MultitaskingActive" width="34" height="34"/>
         <image name="wall" width="2560" height="1600"/>
+        <image name="weather" width="300" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="J4b-as-14I"/>
-        <segue reference="FDT-ri-pIM"/>
+        <segue reference="m2V-4N-lNi"/>
     </inferredMetricsTieBreakers>
 </document>

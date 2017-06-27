@@ -29,6 +29,7 @@
 		90B7D1781F024A9A006E442E /* AppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B7D1771F024A9A006E442E /* AppCell.swift */; };
 		90B7D17A1F024F82006E442E /* AssistantVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B7D1791F024F82006E442E /* AssistantVC.swift */; };
 		90B7D17C1F0257F0006E442E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B7D17B1F0257F0006E442E /* Extensions.swift */; };
+		90B7D17E1F0264DD006E442E /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B7D17D1F0264DD006E442E /* CameraVC.swift */; };
 		BC47A6DB047ED6914067B0D3 /* Pods_LynxOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BCF4629E9FF5E98BC0703F /* Pods_LynxOSUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		90B7D1771F024A9A006E442E /* AppCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCell.swift; sourceTree = "<group>"; };
 		90B7D1791F024F82006E442E /* AssistantVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssistantVC.swift; sourceTree = "<group>"; };
 		90B7D17B1F0257F0006E442E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		90B7D17D1F0264DD006E442E /* CameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		97BCF4629E9FF5E98BC0703F /* Pods_LynxOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LynxOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA3264100DE153780CDC2D25 /* Pods_LynxOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LynxOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C223338A5A7B741C17269D63 /* Pods-LynxOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LynxOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LynxOSTests/Pods-LynxOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				9039DC8E1F0046510066563A /* MainVC.swift */,
 				9039DC901F0046770066563A /* SettingsVC.swift */,
 				90B7D1791F024F82006E442E /* AssistantVC.swift */,
+				90B7D17D1F0264DD006E442E /* CameraVC.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -571,6 +574,7 @@
 				9039DC8F1F0046510066563A /* MainVC.swift in Sources */,
 				9081981E1F011BE400597386 /* Material Design.swift in Sources */,
 				9039DC5E1F0043CF0066563A /* LynxOS.xcdatamodeld in Sources */,
+				90B7D17E1F0264DD006E442E /* CameraVC.swift in Sources */,
 				9081981B1F011BE400597386 /* CustomButtonAnimated.swift in Sources */,
 				9081981F1F011BE400597386 /* RoundedImageView.swift in Sources */,
 				9081981D1F011BE400597386 /* DropMenuButton.swift in Sources */,

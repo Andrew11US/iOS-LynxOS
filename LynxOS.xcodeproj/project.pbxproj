@@ -38,6 +38,7 @@
 		90E408551F043C22001DD990 /* MusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E408541F043C22001DD990 /* MusicVC.swift */; };
 		90E4085A1F04434C001DD990 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E408591F04434C001DD990 /* MapVC.swift */; };
 		90E4085C1F0446BE001DD990 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 90E4085B1F0446BE001DD990 /* song.mp3 */; };
+		90E4085E1F0447FA001DD990 /* ClockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E4085D1F0447FA001DD990 /* ClockVC.swift */; };
 		BC47A6DB047ED6914067B0D3 /* Pods_LynxOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BCF4629E9FF5E98BC0703F /* Pods_LynxOSUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +101,7 @@
 		90E408541F043C22001DD990 /* MusicVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVC.swift; sourceTree = "<group>"; };
 		90E408591F04434C001DD990 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		90E4085B1F0446BE001DD990 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
+		90E4085D1F0447FA001DD990 /* ClockVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockVC.swift; sourceTree = "<group>"; };
 		97BCF4629E9FF5E98BC0703F /* Pods_LynxOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LynxOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA3264100DE153780CDC2D25 /* Pods_LynxOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LynxOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C223338A5A7B741C17269D63 /* Pods-LynxOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LynxOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LynxOSTests/Pods-LynxOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				90B7D1891F02BA82006E442E /* NotAvailableVC.swift */,
 				90E408541F043C22001DD990 /* MusicVC.swift */,
 				90E408591F04434C001DD990 /* MapVC.swift */,
+				90E4085D1F0447FA001DD990 /* ClockVC.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -600,6 +603,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90E4085E1F0447FA001DD990 /* ClockVC.swift in Sources */,
 				9081981C1F011BE400597386 /* CustomTextField.swift in Sources */,
 				908198291F0122B000597386 /* FingerprintAuthentication.swift in Sources */,
 				90B7D17A1F024F82006E442E /* AssistantVC.swift in Sources */,

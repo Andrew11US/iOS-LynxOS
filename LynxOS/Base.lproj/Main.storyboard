@@ -244,6 +244,7 @@
                         <segue destination="9tR-9T-1fE" kind="presentation" identifier="openNA" modalTransitionStyle="crossDissolve" id="9Zu-rU-cKx"/>
                         <segue destination="PHW-vM-gWJ" kind="presentation" identifier="openMusic" modalTransitionStyle="crossDissolve" id="YD8-9n-964"/>
                         <segue destination="w8I-0a-Z6Z" kind="presentation" identifier="openMap" modalTransitionStyle="crossDissolve" id="dPd-SU-3uK"/>
+                        <segue destination="WXB-t6-XEi" kind="presentation" identifier="openClock" modalTransitionStyle="crossDissolve" id="w8L-nL-909"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jvk-vc-35t" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -467,6 +468,109 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C5n-Zo-0fU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1931.8840579710147" y="-1361.413043478261"/>
+        </scene>
+        <!--ClockVC-->
+        <scene sceneID="CrA-l3-4m9">
+            <objects>
+                <viewController id="WXB-t6-XEi" customClass="ClockVC" customModule="LynxOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BNl-5Q-z8q"/>
+                        <viewControllerLayoutGuide type="bottom" id="YB6-JD-8HI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w7y-wU-8OP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView clipsSubviews="YES" contentMode="scaleToFill" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="pEA-bl-3NA">
+                                <rect key="frame" x="101" y="684" width="212" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVZ-F4-6Ek" customClass="CustomButton" customModule="LynxOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="52n-wv-ppv"/>
+                                            <constraint firstAttribute="width" constant="44" id="AIU-kO-CVW"/>
+                                        </constraints>
+                                        <state key="normal" image="Back"/>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ab5-Eh-zsQ" customClass="CustomButton" customModule="LynxOS" customModuleProvider="target">
+                                        <rect key="frame" x="84" y="0.0" width="44" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="ICO-5p-GsR"/>
+                                            <constraint firstAttribute="height" constant="44" id="jln-vz-8zd"/>
+                                        </constraints>
+                                        <state key="normal" image="Home"/>
+                                        <connections>
+                                            <segue destination="AND-vF-q44" kind="presentation" modalTransitionStyle="crossDissolve" id="Jwj-Fc-JxQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pg0-8F-5AZ" customClass="CustomButton" customModule="LynxOS" customModuleProvider="target">
+                                        <rect key="frame" x="168" y="0.0" width="44" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="C2R-o5-N6d"/>
+                                            <constraint firstAttribute="width" constant="44" id="aja-Gv-pst"/>
+                                        </constraints>
+                                        <state key="normal" image="Multitasking"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="LgN-Us-9Fn"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EC-C9-TzS">
+                                <rect key="frame" x="40" y="140" width="334" height="109"/>
+                                <fontDescription key="fontDescription" name="Baumans-Regular" family="Baumans" pointSize="92"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="VAe-3s-Z3w">
+                                <rect key="frame" x="121.66666666666669" y="289" width="171" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhQ-Uy-P97">
+                                        <rect key="frame" x="0.0" y="0.0" width="29.999999999999986" height="30"/>
+                                        <state key="normal" title="Fire"/>
+                                        <connections>
+                                            <action selector="start:" destination="WXB-t6-XEi" eventType="touchUpInside" id="7tR-1C-wtR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toQ-4Z-LGD">
+                                        <rect key="frame" x="59.999999999999986" y="0.0" width="42" height="30"/>
+                                        <state key="normal" title="Pause"/>
+                                        <connections>
+                                            <action selector="pause:" destination="WXB-t6-XEi" eventType="touchUpInside" id="Yfm-AG-vo8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riF-1K-7eb">
+                                        <rect key="frame" x="132" y="0.0" width="39.000000000000028" height="30"/>
+                                        <state key="normal" title="Reset"/>
+                                        <connections>
+                                            <action selector="reset:" destination="WXB-t6-XEi" eventType="touchUpInside" id="1pA-bA-TYQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YB6-JD-8HI" firstAttribute="top" secondItem="pEA-bl-3NA" secondAttribute="bottom" constant="8" id="Eay-sl-kER"/>
+                            <constraint firstItem="VAe-3s-Z3w" firstAttribute="top" secondItem="3EC-C9-TzS" secondAttribute="bottom" constant="40" id="bR1-DW-SI8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3EC-C9-TzS" secondAttribute="trailing" constant="20" id="i0C-aB-RKX"/>
+                            <constraint firstItem="3EC-C9-TzS" firstAttribute="top" secondItem="BNl-5Q-z8q" secondAttribute="bottom" constant="120" id="igw-HT-Q1f"/>
+                            <constraint firstItem="3EC-C9-TzS" firstAttribute="leading" secondItem="w7y-wU-8OP" secondAttribute="leadingMargin" constant="20" id="jzJ-Fx-Sr1"/>
+                            <constraint firstItem="pEA-bl-3NA" firstAttribute="centerX" secondItem="w7y-wU-8OP" secondAttribute="centerX" id="mGj-Nb-Uy7"/>
+                            <constraint firstItem="VAe-3s-Z3w" firstAttribute="centerX" secondItem="w7y-wU-8OP" secondAttribute="centerX" id="rZ2-Gx-MYo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="time" destination="3EC-C9-TzS" id="neO-ET-lxd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y3x-dv-OFM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2798.5507246376815" y="-1361.413043478261"/>
         </scene>
         <!--MusicVC-->
         <scene sceneID="8wh-dx-7xV">
@@ -868,6 +972,6 @@
         <image name="weather" width="300" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="L0P-Vk-ea8"/>
+        <segue reference="Jwj-Fc-JxQ"/>
     </inferredMetricsTieBreakers>
 </document>

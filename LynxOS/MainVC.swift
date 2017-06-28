@@ -53,16 +53,20 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func openAssistant(_ sender: Any) {
+        performSegue(withIdentifier: Identifiers.assistant.rawValue, sender: nil)
+    }
+    
     func addApps() {
         apps.append(App(appName: "Camera", appIconImage: "camera", destination: Identifiers.camera.rawValue))
         apps.append(App(appName: "Weather", appIconImage: "weather", destination: Identifiers.notAvailable.rawValue))
         apps.append(App(appName: "Browser", appIconImage: "browser", destination: Identifiers.notAvailable.rawValue))
-        apps.append(App(appName: "Music", appIconImage: "music", destination: Identifiers.notAvailable.rawValue))
+        apps.append(App(appName: "Music", appIconImage: "music", destination: Identifiers.music.rawValue))
         apps.append(App(appName: "Calculator", appIconImage: "calculator", destination: Identifiers.notAvailable.rawValue))
         apps.append(App(appName: "Clock", appIconImage: "clock", destination: Identifiers.notAvailable.rawValue))
         apps.append(App(appName: "Brush", appIconImage: "brush", destination: Identifiers.notAvailable.rawValue))
         apps.append(App(appName: "SocialNet", appIconImage: "socialnet", destination: Identifiers.notAvailable.rawValue))
         apps.append(App(appName: "Random", appIconImage: "random", destination: Identifiers.notAvailable.rawValue))
-        apps.append(App(appName: "LAplaces", appIconImage: "laplaces", destination: Identifiers.notAvailable.rawValue))
+        apps.append(App(appName: "Map", appIconImage: "laplaces", destination: Identifiers.map.rawValue))
     }
 }

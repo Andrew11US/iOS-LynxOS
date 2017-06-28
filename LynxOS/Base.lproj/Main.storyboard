@@ -189,7 +189,7 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MT1-zc-gwg">
-                                                            <rect key="frame" x="263.66666666666669" y="8" width="86" height="21"/>
+                                                            <rect key="frame" x="270" y="8" width="79.666666666666686" height="21"/>
                                                             <fontDescription key="fontDescription" name="Baumans-Regular" family="Baumans" pointSize="18"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -242,13 +242,15 @@
                         <segue destination="RL4-a7-qn0" kind="presentation" identifier="openAssistant" modalTransitionStyle="crossDissolve" id="4hl-VX-cRb"/>
                         <segue destination="aiK-LG-9X1" kind="presentation" identifier="openCamera" modalTransitionStyle="crossDissolve" id="4mp-Ll-Fae"/>
                         <segue destination="9tR-9T-1fE" kind="presentation" identifier="openNA" modalTransitionStyle="crossDissolve" id="9Zu-rU-cKx"/>
+                        <segue destination="PHW-vM-gWJ" kind="presentation" identifier="openMusic" modalTransitionStyle="crossDissolve" id="YD8-9n-964"/>
+                        <segue destination="w8I-0a-Z6Z" kind="presentation" identifier="openMap" modalTransitionStyle="crossDissolve" id="dPd-SU-3uK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jvk-vc-35t" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer numberOfTapsRequired="2" id="QdO-GM-8at"/>
                 <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="gd6-wC-TCb">
                     <connections>
-                        <action selector="goToAssistant:" destination="AND-vF-q44" id="k4b-J1-Ywl"/>
+                        <action selector="openAssistant:" destination="AND-vF-q44" id="qZ5-OR-2sV"/>
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>
@@ -348,7 +350,7 @@
                                             <constraint firstAttribute="width" constant="44" id="Qty-f2-DxW"/>
                                             <constraint firstAttribute="height" constant="44" id="W44-Vf-2FW"/>
                                         </constraints>
-                                        <state key="normal" image="HomeActive"/>
+                                        <state key="normal" image="Home"/>
                                         <connections>
                                             <segue destination="AND-vF-q44" kind="presentation" modalTransitionStyle="crossDissolve" id="DDw-Op-fv1"/>
                                         </connections>
@@ -396,6 +398,180 @@
             </objects>
             <point key="canvasLocation" x="1932" y="136"/>
         </scene>
+        <!--MapVC-->
+        <scene sceneID="LH6-Fi-f8r">
+            <objects>
+                <viewController id="w8I-0a-Z6Z" customClass="MapVC" customModule="LynxOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FLQ-pi-SWK"/>
+                        <viewControllerLayoutGuide type="bottom" id="mJH-oz-aNG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OP5-cN-9tl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jR6-9K-m6z">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="cgs-BJ-YJB">
+                                <rect key="frame" x="101" y="684" width="212" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HN4-zL-0XH" customClass="CustomButton" customModule="LynxOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="7eL-T0-aZP"/>
+                                            <constraint firstAttribute="height" constant="44" id="tsm-Re-BP5"/>
+                                        </constraints>
+                                        <state key="normal" image="Back"/>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xg5-qA-Tbu" customClass="CustomButton" customModule="LynxOS" customModuleProvider="target">
+                                        <rect key="frame" x="84" y="0.0" width="44" height="44"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="E5r-Cj-SSe"/>
+                                            <constraint firstAttribute="height" constant="44" id="c8D-RR-6Lr"/>
+                                        </constraints>
+                                        <state key="normal" image="Home"/>
+                                        <connections>
+                                            <segue destination="AND-vF-q44" kind="presentation" modalTransitionStyle="crossDissolve" id="L0P-Vk-ea8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qY-rU-NKn" customClass="CustomButton" customModule="LynxOS" customModuleProvider="target">
+                                        <rect key="frame" x="168" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="CBk-b9-HyZ"/>
+                                            <constraint firstAttribute="width" constant="44" id="HJg-6z-hCN"/>
+                                        </constraints>
+                                        <state key="normal" image="Multitasking"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="bZC-qu-7CP"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mJH-oz-aNG" firstAttribute="top" secondItem="cgs-BJ-YJB" secondAttribute="bottom" constant="8" id="Lby-kZ-984"/>
+                            <constraint firstAttribute="trailing" secondItem="jR6-9K-m6z" secondAttribute="trailing" id="P5V-bs-cz5"/>
+                            <constraint firstItem="jR6-9K-m6z" firstAttribute="top" secondItem="FLQ-pi-SWK" secondAttribute="bottom" id="Txx-dc-aJ4"/>
+                            <constraint firstItem="cgs-BJ-YJB" firstAttribute="centerX" secondItem="OP5-cN-9tl" secondAttribute="centerX" id="Y5W-kX-wVK"/>
+                            <constraint firstItem="mJH-oz-aNG" firstAttribute="top" secondItem="jR6-9K-m6z" secondAttribute="bottom" id="ikF-4e-Sxq"/>
+                            <constraint firstItem="jR6-9K-m6z" firstAttribute="leading" secondItem="OP5-cN-9tl" secondAttribute="leading" id="vVu-ah-DJq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="jR6-9K-m6z" id="CH3-ze-gfM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C5n-Zo-0fU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1931.8840579710147" y="-1361.413043478261"/>
+        </scene>
+        <!--MusicVC-->
+        <scene sceneID="8wh-dx-7xV">
+            <objects>
+                <viewController id="PHW-vM-gWJ" customClass="MusicVC" customModule="LynxOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0QR-kK-4zZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Psb-bt-8kq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zx2-gh-ek1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wall" translatesAutoresizingMaskIntoConstraints="NO" id="9mM-gB-xSV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="dfZ-Fd-fFS">
+                                <rect key="frame" x="101" y="684" width="212" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMw-a9-bw2" customClass="CustomButton" customModule="LynxOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="kUu-Ca-8w5"/>
+                                            <constraint firstAttribute="width" constant="44" id="x5y-X1-npq"/>
+                                        </constraints>
+                                        <state key="normal" image="Back"/>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyM-bC-soO" customClass="CustomButton" customModule="LynxOS" customModuleProvider="target">
+                                        <rect key="frame" x="84" y="0.0" width="44" height="44"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="CUU-LQ-yD2"/>
+                                            <constraint firstAttribute="width" constant="44" id="lcf-bb-M9L"/>
+                                        </constraints>
+                                        <state key="normal" image="Home"/>
+                                        <connections>
+                                            <segue destination="AND-vF-q44" kind="presentation" modalTransitionStyle="crossDissolve" id="Tpr-gw-pF4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2n-aL-RVO" customClass="CustomButton" customModule="LynxOS" customModuleProvider="target">
+                                        <rect key="frame" x="168" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="EG0-wO-pcg"/>
+                                            <constraint firstAttribute="width" constant="44" id="r7x-aB-fP8"/>
+                                        </constraints>
+                                        <state key="normal" image="Multitasking"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Evc-e5-Uhw"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="bTX-dW-5yZ">
+                                <rect key="frame" x="118" y="353" width="178" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5a0-SI-wwi">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Pause">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pause:" destination="PHW-vM-gWJ" eventType="touchUpInside" id="gOW-vt-Lkp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQi-bI-OUj">
+                                        <rect key="frame" x="72" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Play">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="play:" destination="PHW-vM-gWJ" eventType="touchUpInside" id="8JL-NX-QVs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgQ-Ie-zIC">
+                                        <rect key="frame" x="132" y="0.0" width="46" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Replay">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="replay:" destination="PHW-vM-gWJ" eventType="touchUpInside" id="Tq9-Gd-1cE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9mM-gB-xSV" secondAttribute="trailing" id="1xE-Ql-rtU"/>
+                            <constraint firstItem="9mM-gB-xSV" firstAttribute="leading" secondItem="zx2-gh-ek1" secondAttribute="leading" id="36C-or-wHe"/>
+                            <constraint firstItem="bTX-dW-5yZ" firstAttribute="centerX" secondItem="zx2-gh-ek1" secondAttribute="centerX" id="DYq-NI-6L1"/>
+                            <constraint firstItem="9mM-gB-xSV" firstAttribute="top" secondItem="zx2-gh-ek1" secondAttribute="top" id="KZa-fY-lmG"/>
+                            <constraint firstAttribute="bottom" secondItem="9mM-gB-xSV" secondAttribute="bottom" id="Nni-s8-6Ak"/>
+                            <constraint firstItem="Psb-bt-8kq" firstAttribute="top" secondItem="dfZ-Fd-fFS" secondAttribute="bottom" constant="8" id="SB8-xv-ObL"/>
+                            <constraint firstItem="bTX-dW-5yZ" firstAttribute="centerY" secondItem="zx2-gh-ek1" secondAttribute="centerY" id="USL-OB-VgI"/>
+                            <constraint firstItem="dfZ-Fd-fFS" firstAttribute="centerX" secondItem="zx2-gh-ek1" secondAttribute="centerX" id="YOl-xp-tdS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kra-u4-zKx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1932" y="-624"/>
+        </scene>
         <!--Not AvailableVC-->
         <scene sceneID="fv9-QQ-3JR">
             <objects>
@@ -432,7 +608,7 @@
                                             <constraint firstAttribute="width" constant="44" id="0Mn-ua-NL1"/>
                                             <constraint firstAttribute="height" constant="44" id="b5Z-OO-Tcp"/>
                                         </constraints>
-                                        <state key="normal" image="HomeActive"/>
+                                        <state key="normal" image="Home"/>
                                         <connections>
                                             <segue destination="AND-vF-q44" kind="presentation" modalTransitionStyle="crossDissolve" id="Mqy-KK-1ur"/>
                                         </connections>
@@ -454,7 +630,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This item is not available at the moment" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhp-IG-N5X">
-                                <rect key="frame" x="40" y="110.00000000000001" width="334" height="51.333333333333357"/>
+                                <rect key="frame" x="40" y="110.00000000000001" width="334" height="52.333333333333357"/>
                                 <fontDescription key="fontDescription" name="Baumans-Regular" family="Baumans" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -510,7 +686,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Development..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3az-EA-vcu">
-                                            <rect key="frame" x="20" y="140" width="374" height="25.666666666666657"/>
+                                            <rect key="frame" x="20" y="140" width="374" height="26.333333333333343"/>
                                             <fontDescription key="fontDescription" name="Baumans-Regular" family="Baumans" pointSize="22"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -608,7 +784,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assistant is not available right now" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mX4-2u-VoK">
-                                            <rect key="frame" x="20" y="90" width="374" height="58.333333333333343"/>
+                                            <rect key="frame" x="20" y="90" width="374" height="59.333333333333343"/>
                                             <fontDescription key="fontDescription" name="Baumans-Regular" family="Baumans" pointSize="25"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -692,6 +868,6 @@
         <image name="weather" width="300" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="J4b-as-14I"/>
+        <segue reference="L0P-Vk-ea8"/>
     </inferredMetricsTieBreakers>
 </document>

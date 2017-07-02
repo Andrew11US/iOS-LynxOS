@@ -64,7 +64,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         apps.append(App(appName: "Music", appIconImage: "music", destination: Identifiers.music.rawValue))
         apps.append(App(appName: "Calculator", appIconImage: "calculator", destination: Identifiers.notAvailable.rawValue))
         apps.append(App(appName: "Clock", appIconImage: "clock", destination: Identifiers.clock.rawValue))
-        apps.append(App(appName: "Brush", appIconImage: "brush", destination: Identifiers.notAvailable.rawValue))
+        apps.append(App(appName: "Shake", appIconImage: "brush", destination: Identifiers.shake.rawValue))
         apps.append(App(appName: "Location", appIconImage: "socialnet", destination: Identifiers.currentLocation.rawValue))
         apps.append(App(appName: "Random", appIconImage: "random", destination: Identifiers.notAvailable.rawValue))
         apps.append(App(appName: "Map", appIconImage: "laplaces", destination: Identifiers.map.rawValue))

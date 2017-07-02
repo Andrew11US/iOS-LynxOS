@@ -18,6 +18,7 @@ enum Identifiers: String {
     case map = "openMap"
     case clock = "openClock"
     case currentLocation = "openCurrentLocation"
+    case shake = "openShake"
     case notAvailable = "openNA"
     case appCell = "appCell"
     case settingsCell = "settingsCell"

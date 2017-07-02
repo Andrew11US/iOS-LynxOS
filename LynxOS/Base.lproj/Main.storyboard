@@ -246,6 +246,7 @@
                         <segue destination="w8I-0a-Z6Z" kind="presentation" identifier="openMap" modalTransitionStyle="crossDissolve" id="dPd-SU-3uK"/>
                         <segue destination="WXB-t6-XEi" kind="presentation" identifier="openClock" modalTransitionStyle="crossDissolve" id="w8L-nL-909"/>
                         <segue destination="Io2-hj-m8v" kind="presentation" identifier="openCurrentLocation" modalTransitionStyle="crossDissolve" id="faS-sM-uBe"/>
+                        <segue destination="N4M-ey-LmY" kind="presentation" identifier="openShake" modalTransitionStyle="crossDissolve" id="azy-sh-gr8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jvk-vc-35t" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -750,6 +751,79 @@
             </objects>
             <point key="canvasLocation" x="2941" y="-624"/>
         </scene>
+        <!--ShakeVC-->
+        <scene sceneID="OeM-Ic-hng">
+            <objects>
+                <viewController id="N4M-ey-LmY" customClass="ShakeVC" customModule="LynxOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F2N-0W-cl0"/>
+                        <viewControllerLayoutGuide type="bottom" id="GAs-g9-Qaf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h0J-rq-bvq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fez-hu-IYT">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <stackView clipsSubviews="YES" contentMode="scaleToFill" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Lez-kU-fEs">
+                                <rect key="frame" x="101" y="684" width="212" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8P-oc-8Fe" customClass="CustomButton" customModule="LynxOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="br5-f7-TBK"/>
+                                            <constraint firstAttribute="width" constant="44" id="jEK-q3-iwK"/>
+                                        </constraints>
+                                        <state key="normal" image="Back"/>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xxc-Go-FDc" customClass="CustomButton" customModule="LynxOS" customModuleProvider="target">
+                                        <rect key="frame" x="84" y="0.0" width="44" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="0yo-Ko-LsV"/>
+                                            <constraint firstAttribute="width" constant="44" id="KEP-ul-0Ah"/>
+                                        </constraints>
+                                        <state key="normal" image="Home"/>
+                                        <connections>
+                                            <segue destination="AND-vF-q44" kind="presentation" modalTransitionStyle="crossDissolve" id="WMf-oY-T9f"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiQ-Jo-E9b" customClass="CustomButton" customModule="LynxOS" customModuleProvider="target">
+                                        <rect key="frame" x="168" y="0.0" width="44" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Yxu-dy-hJO"/>
+                                            <constraint firstAttribute="width" constant="44" id="gzD-hW-ltB"/>
+                                        </constraints>
+                                        <state key="normal" image="Multitasking"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="JtK-L4-jHT"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lez-kU-fEs" firstAttribute="centerX" secondItem="h0J-rq-bvq" secondAttribute="centerX" id="4Ma-pD-c12"/>
+                            <constraint firstItem="Fez-hu-IYT" firstAttribute="leading" secondItem="h0J-rq-bvq" secondAttribute="leading" id="50F-1g-U2f"/>
+                            <constraint firstAttribute="trailing" secondItem="Fez-hu-IYT" secondAttribute="trailing" id="E32-9T-nFd"/>
+                            <constraint firstItem="GAs-g9-Qaf" firstAttribute="top" secondItem="Fez-hu-IYT" secondAttribute="bottom" id="GUh-Rk-hla"/>
+                            <constraint firstItem="GAs-g9-Qaf" firstAttribute="top" secondItem="Lez-kU-fEs" secondAttribute="bottom" constant="8" id="K1B-Qt-xEY"/>
+                            <constraint firstItem="Fez-hu-IYT" firstAttribute="top" secondItem="F2N-0W-cl0" secondAttribute="bottom" id="R79-BT-vI0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="viewForImage" destination="Fez-hu-IYT" id="crO-gT-NL5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="edD-Wt-S8A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3896" y="-624"/>
+        </scene>
         <!--Not AvailableVC-->
         <scene sceneID="fv9-QQ-3JR">
             <objects>
@@ -1046,6 +1120,6 @@
         <image name="weather" width="300" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="O9m-OM-mp6"/>
+        <segue reference="2JG-Oj-GPx"/>
     </inferredMetricsTieBreakers>
 </document>

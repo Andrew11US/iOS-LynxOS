@@ -17,6 +17,7 @@ enum Identifiers: String {
     case music = "openMusic"
     case map = "openMap"
     case clock = "openClock"
+    case currentLocation = "openCurrentLocation"
     case notAvailable = "openNA"
     case appCell = "appCell"
     case settingsCell = "settingsCell"

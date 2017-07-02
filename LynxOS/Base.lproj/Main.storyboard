@@ -245,6 +245,7 @@
                         <segue destination="PHW-vM-gWJ" kind="presentation" identifier="openMusic" modalTransitionStyle="crossDissolve" id="YD8-9n-964"/>
                         <segue destination="w8I-0a-Z6Z" kind="presentation" identifier="openMap" modalTransitionStyle="crossDissolve" id="dPd-SU-3uK"/>
                         <segue destination="WXB-t6-XEi" kind="presentation" identifier="openClock" modalTransitionStyle="crossDissolve" id="w8L-nL-909"/>
+                        <segue destination="Io2-hj-m8v" kind="presentation" identifier="openCurrentLocation" modalTransitionStyle="crossDissolve" id="faS-sM-uBe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jvk-vc-35t" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -676,6 +677,79 @@
             </objects>
             <point key="canvasLocation" x="1932" y="-624"/>
         </scene>
+        <!--Current LocationVC-->
+        <scene sceneID="1xU-VG-aeU">
+            <objects>
+                <viewController id="Io2-hj-m8v" customClass="CurrentLocationVC" customModule="LynxOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xm2-yX-4cs"/>
+                        <viewControllerLayoutGuide type="bottom" id="XK5-no-GEj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vZl-1A-ria">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TWL-3U-79M">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </mapView>
+                            <stackView clipsSubviews="YES" contentMode="scaleToFill" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="off-UH-ZjU">
+                                <rect key="frame" x="101" y="684" width="212" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIY-yB-jls" customClass="CustomButton" customModule="LynxOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="OB7-GP-Qlc"/>
+                                            <constraint firstAttribute="width" constant="44" id="liy-sK-mGu"/>
+                                        </constraints>
+                                        <state key="normal" image="Back"/>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgK-ic-Psb" customClass="CustomButton" customModule="LynxOS" customModuleProvider="target">
+                                        <rect key="frame" x="84" y="0.0" width="44" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="1HQ-i4-oSx"/>
+                                            <constraint firstAttribute="height" constant="44" id="trb-9F-5FQ"/>
+                                        </constraints>
+                                        <state key="normal" image="Home"/>
+                                        <connections>
+                                            <segue destination="AND-vF-q44" kind="presentation" modalTransitionStyle="crossDissolve" id="O9m-OM-mp6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIT-c0-hgT" customClass="CustomButton" customModule="LynxOS" customModuleProvider="target">
+                                        <rect key="frame" x="168" y="0.0" width="44" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="JG1-RZ-drA"/>
+                                            <constraint firstAttribute="width" constant="44" id="ebn-q3-R6p"/>
+                                        </constraints>
+                                        <state key="normal" image="Multitasking"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="NPw-dj-bVa"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TWL-3U-79M" firstAttribute="leading" secondItem="vZl-1A-ria" secondAttribute="leading" id="87H-EU-95Y"/>
+                            <constraint firstItem="XK5-no-GEj" firstAttribute="top" secondItem="TWL-3U-79M" secondAttribute="bottom" id="FrU-PK-LCs"/>
+                            <constraint firstItem="TWL-3U-79M" firstAttribute="top" secondItem="xm2-yX-4cs" secondAttribute="bottom" id="Lo4-ca-oP6"/>
+                            <constraint firstItem="XK5-no-GEj" firstAttribute="top" secondItem="off-UH-ZjU" secondAttribute="bottom" constant="8" id="NV3-XJ-DD4"/>
+                            <constraint firstAttribute="trailing" secondItem="TWL-3U-79M" secondAttribute="trailing" id="ewX-db-05K"/>
+                            <constraint firstItem="off-UH-ZjU" firstAttribute="centerX" secondItem="vZl-1A-ria" secondAttribute="centerX" id="x1h-bN-z6K"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="TWL-3U-79M" id="2Yi-4L-L8b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cMn-Iy-BjY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2941" y="-624"/>
+        </scene>
         <!--Not AvailableVC-->
         <scene sceneID="fv9-QQ-3JR">
             <objects>
@@ -972,6 +1046,6 @@
         <image name="weather" width="300" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Jwj-Fc-JxQ"/>
+        <segue reference="O9m-OM-mp6"/>
     </inferredMetricsTieBreakers>
 </document>

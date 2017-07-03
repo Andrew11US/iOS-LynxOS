@@ -24,6 +24,7 @@ class LockVC: UIViewController {
             self.timeLbl.text = Date().getTime()
             self.dateLbl.text = Date().getDate()
         }
+        unlockTapped((Any).self)
     }
     
     @IBAction func unlockTapped(_ sender: Any) {

@@ -13,6 +13,7 @@ import CoreLocation
 class CurrentLocationVC: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var map: MKMapView!
+    @IBOutlet weak var info: UILabel!
     
     let manager = CLLocationManager()
     
@@ -40,6 +41,16 @@ class CurrentLocationVC: UIViewController, CLLocationManagerDelegate {
         print(location.altitude, location.course, location.floor ?? "0", location.speed)
         
         self.map.showsUserLocation = true
+        
+        CLGeocoder().reverseGeocodeLocation(location) { (placemark, error) in
+            if error != nil {
+                print("Error")
+            } else {
+                if let place = placemark?[0] {
+                    self.info.text = "\(place.country ?? "X"), \(place.administrativeArea ?? "X"), \(place.thoroughfare ?? "X"), \(place.subThoroughfare ?? "X"), \(place.locality ?? "X")"
+                }
+            }
+        }
     }
 
 }

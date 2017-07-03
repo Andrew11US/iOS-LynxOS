@@ -691,8 +691,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TWL-3U-79M">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="566"/>
                             </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngi-CO-SuE">
+                                <rect key="frame" x="0.0" y="586" width="414" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="F7y-wD-Cd4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView clipsSubviews="YES" contentMode="scaleToFill" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="off-UH-ZjU">
                                 <rect key="frame" x="101" y="684" width="212" height="44"/>
                                 <subviews>
@@ -735,21 +744,25 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="XK5-no-GEj" firstAttribute="top" secondItem="Ngi-CO-SuE" secondAttribute="bottom" id="5NT-uu-1s2"/>
                             <constraint firstItem="TWL-3U-79M" firstAttribute="leading" secondItem="vZl-1A-ria" secondAttribute="leading" id="87H-EU-95Y"/>
-                            <constraint firstItem="XK5-no-GEj" firstAttribute="top" secondItem="TWL-3U-79M" secondAttribute="bottom" id="FrU-PK-LCs"/>
+                            <constraint firstAttribute="trailing" secondItem="Ngi-CO-SuE" secondAttribute="trailing" id="CIu-Rn-bjm"/>
                             <constraint firstItem="TWL-3U-79M" firstAttribute="top" secondItem="xm2-yX-4cs" secondAttribute="bottom" id="Lo4-ca-oP6"/>
                             <constraint firstItem="XK5-no-GEj" firstAttribute="top" secondItem="off-UH-ZjU" secondAttribute="bottom" constant="8" id="NV3-XJ-DD4"/>
+                            <constraint firstItem="Ngi-CO-SuE" firstAttribute="top" secondItem="TWL-3U-79M" secondAttribute="bottom" id="Uij-gu-ugh"/>
                             <constraint firstAttribute="trailing" secondItem="TWL-3U-79M" secondAttribute="trailing" id="ewX-db-05K"/>
+                            <constraint firstItem="Ngi-CO-SuE" firstAttribute="leading" secondItem="vZl-1A-ria" secondAttribute="leading" id="lkn-Xh-fTj"/>
                             <constraint firstItem="off-UH-ZjU" firstAttribute="centerX" secondItem="vZl-1A-ria" secondAttribute="centerX" id="x1h-bN-z6K"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="info" destination="Ngi-CO-SuE" id="INi-HC-QEM"/>
                         <outlet property="map" destination="TWL-3U-79M" id="2Yi-4L-L8b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMn-Iy-BjY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2941" y="-624"/>
+            <point key="canvasLocation" x="2940.579710144928" y="-624.45652173913049"/>
         </scene>
         <!--ShakeVC-->
         <scene sceneID="OeM-Ic-hng">
@@ -1120,6 +1133,6 @@
         <image name="weather" width="300" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2JG-Oj-GPx"/>
+        <segue reference="O9m-OM-mp6"/>
     </inferredMetricsTieBreakers>
 </document>

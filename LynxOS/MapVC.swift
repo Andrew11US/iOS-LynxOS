@@ -12,6 +12,7 @@ import MapKit
 class MapVC: UIViewController {
 
     @IBOutlet weak var map: MKMapView!
+    @IBOutlet weak var gesture: UILongPressGestureRecognizer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +26,31 @@ class MapVC: UIViewController {
         annotation.coordinate = location
         annotation.title = "Apple"
         annotation.subtitle = "Welcome"
+
+        map.addAnnotation(annotation)
+    }
+    
+    @IBAction func addAnnotationTapped(_ sender: Any) {
+        handleLongPress(gestureRecognizer: gesture)
+    }
+    
+    // Add annotation when long press
+    func handleLongPress(gestureRecognizer: UILongPressGestureRecognizer) {
+        if gestureRecognizer.state == UIGestureRecognizerState.began {
         
+        let touchPoint: CGPoint = gestureRecognizer.location(in: map)
+        let newCoordinate: CLLocationCoordinate2D = map.convert(touchPoint, toCoordinateFrom: map)
+        
+        addAnnotationOnLocation(pointedCoordinate: newCoordinate)
+        }
+    }
+    
+    func addAnnotationOnLocation(pointedCoordinate: CLLocationCoordinate2D) {
+        
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = pointedCoordinate
+        annotation.title = "Loading..."
+        annotation.subtitle = "Loading..."
         map.addAnnotation(annotation)
     }
 

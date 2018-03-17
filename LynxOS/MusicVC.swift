@@ -16,6 +16,7 @@ class MusicVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Error handling do-try-catch block
         do {
             let audioPath = Bundle.main.path(forResource: "song", ofType: "mp3")!
             try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath))
